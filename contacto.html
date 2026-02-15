@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="icon" type="image/x-icon" href="media\bulb.png">
+  <title>Formulario hecho con Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+  
+  <nav>
+<ul>
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="contacto.html">Contacto</a></li>
+  <li><a href="https://www.instructables.com/circuits/projects">Instructables</a></li>
+  <li><a href="https://www.hackster.io/iot/projects">Hackster.io</a></li>
+</ul>
+</nav>
+  
+<body>
+
+<div class="container">
+  <h2>Pregúntenos sus dudas sobre IoT! </h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" class="form-control" id="email" placeholder="Introduce tu correo electrónico" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Duda:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="¿Qué duda quiere que resolvamos?" name="pwd">
+    </div>
+    <div class="form-group">
+      <label for="email2">información adicional:</label>
+      <input type="email" class="form-control" id="email" placeholder="Formación, experiencia, etc." name="email">
+    </div>
+
+    <button type="button" class="btn btn-default" onclick='document.getElementById("test").innerHTML = "Muchas gracias! Pronto recibirá un correo con más información"'>Enviar</button>
+  </form>
+  <h2 id="test" style="text-align: center; text-decoration-line: underline;"></h2>
+</div>
+
+
+</body>
+</html>
+
